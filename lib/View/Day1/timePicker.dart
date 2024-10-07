@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
-class TimePickerDial extends StatelessWidget {
+class TimePickerDial extends StatefulWidget {
   const TimePickerDial({super.key});
 
   @override
+  State<TimePickerDial> createState() => _TimePickerDialState();
+}
+
+class _TimePickerDialState extends State<TimePickerDial> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Time Dial'),
-      ),
       body: Center(
         child: ElevatedButton(
           onPressed: () {

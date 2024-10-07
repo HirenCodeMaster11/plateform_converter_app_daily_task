@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class DuckedDataScreen extends StatelessWidget {
+class DuckedDataScreen extends StatefulWidget {
   const DuckedDataScreen({super.key});
 
+  @override
+  State<DuckedDataScreen> createState() => _DuckedDataScreenState();
+}
+
+class _DuckedDataScreenState extends State<DuckedDataScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
