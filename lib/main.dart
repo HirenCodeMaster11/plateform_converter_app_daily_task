@@ -1,13 +1,44 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:plateform_converter_app_daily_task/provider/platform_change_controller.dart';
+import 'package:plateform_converter_app_daily_task/provider/platform_provider.dart';
+import 'package:plateform_converter_app_daily_task/provider/task1_provider.dart';
+import 'package:plateform_converter_app_daily_task/provider/theme_controller.dart';
+import 'package:plateform_converter_app_daily_task/view/screens/android_ui.dart';
+import 'package:plateform_converter_app_daily_task/view/screens/iOS_ui.dart';
 
-import 'View/Day1/Cupertino Date Picker.dart';
-import 'View/Day1/Date Picker.dart';
-import 'View/Day1/Dialog.dart';
-import 'View/Day1/cupertino_time_picker.dart';
-import 'View/Day1/timePicker.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-void main() {
-  runApp(const MyApp());
+bool isDark = false;
+bool isIos = false;
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+  isDark = sharedPreferences.getBool("theme") ?? false;
+  isIos = sharedPreferences.getBool("platform") ?? false;
+
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => Task1Provider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => PlatFormProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ThemeController(isDark),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => PlatformChangeProvider(isIos),
+        ),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -15,11 +46,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    var providerTheme = Provider.of<ThemeController>(context);
+    return (!Provider.of<PlatformChangeProvider>(context).isIos)
+        ? MaterialApp(
       debugShowCheckedModeBanner: false,
-      routes: {
-        '/' : (context) => TimePickerDial(),
-      },
+      theme: (providerTheme.isDark)
+          ? providerTheme.themeDark
+          : providerTheme.themeLight,
+      home: const AndroidUi(),
+    )
+        : CupertinoApp(
+      debugShowCheckedModeBanner: false,
+      theme: (providerTheme.isDark)
+          ? providerTheme.cupertinoThemeDark
+          : providerTheme.cupertinoThemeLight,
+      home: const IosUi(),
     );
   }
 }
