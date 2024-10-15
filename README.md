@@ -39,3 +39,33 @@ A new Flutter project.
 <div align="center">
   <img height="550"  src="https://github.com/user-attachments/assets/ea63e836-649e-45d2-980a-56707d968a05" />
 </div>
+
+
+<h2 align="center">7. Platform Converter App </h2>
+
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/be5081be-cfb3-45d2-8853-31df4906301c" />
+  <img height="550"  src="https://github.com/user-attachments/assets/ed93f6d2-e383-4a3d-81ec-54d9441a5d1e" />
+  <img height="550"  src="https://github.com/user-attachments/assets/26e8f510-1935-4216-b66a-71b084148836" />
+  <img height="550"  src="https://github.com/user-attachments/assets/3567be4d-a24e-4b69-9b19-8687acc6d351" />
+</div>
+
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/3f648c16-bc90-4a57-8db0-cfcac5c6a9a4" />
+    <img height="550"  src="https://github.com/user-attachments/assets/f7f3b36d-fc95-4329-91de-20853c314aeb" />
+    <img height="550"  src="https://github.com/user-attachments/assets/9582f906-9c78-43d4-abe2-91ecc8394456" />
+    <img height="550"  src="https://github.com/user-attachments/assets/5efb19fd-fbb6-4d78-870e-047aa916f35c" />
+</div>
+
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/5b28e9df-a025-42e7-8cb1-5fc050266ddd" />
+  <img height="550"  src="https://github.com/user-attachments/assets/711a1398-af9e-4e38-a731-78495922c3e0" />
+  <img height="550"  src="https://github.com/user-attachments/assets/26e33962-bd8b-4e15-800c-9c5556fa6718" />
+  <img height="550"  src="https://github.com/user-attachments/assets/471bef53-c615-4e3d-9716-0bd03bba6d49" />
+</div>
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/4d2465c5-5506-47c8-ac0a-fe4fec44639e" />
+  <img height="550"  src="https://github.com/user-attachments/assets/1d3e52c9-5bac-4bb9-9d15-bdde76855330" />
+  <img height="550"  src="https://github.com/user-attachments/assets/44c7461e-6201-45f6-a7e8-d87a82cfb8e4" />
+  <img height="550"  src="https://github.com/user-attachments/assets/df456ac8-8423-40e7-8cdb-452ebb81edf4" />
+</div>
