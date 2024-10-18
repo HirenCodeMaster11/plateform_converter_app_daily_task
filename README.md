@@ -40,6 +40,12 @@ A new Flutter project.
   <img height="550"  src="https://github.com/user-attachments/assets/ea63e836-649e-45d2-980a-56707d968a05" />
 </div>
 
+<h2 align="center">2.  App </h2>
+
+<div align="center">
+ <video src="https://github.com/user-attachments/assets/18d6cd03-7bc1-49b3-beac-b8e20bd0d555" type="video/mp4"> 
+</video>
+</div>
 
 <h2 align="center">7. Platform Converter App </h2>
 
